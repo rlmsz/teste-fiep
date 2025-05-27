@@ -1,72 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>Educação Básica SESI PR</title>
-    <link rel="stylesheet" href="styles/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Educação Básica 20 Anos</title>
   </head>
+
   <body>
-    <header>
-      <div class="header-container">
-        <div class="logos-container">
-          <img
-            class="image-logo"
-            src="logos/logo_sistema_fiep.svg"
-            alt="Logo do Sistema FIEP"
-          />
-          <img class="image-logo" src="logos/logo_fiep.svg" alt="Logo FIEP" />
-          <img class="image-logo" src="logos/logo_senai.svg" alt="Logo SENAI" />
-          <img class="image-logo" src="logos/logo_sesi.svg" alt="Logo SESI" />
-          <img class="image-logo" src="logos/logo_iel.svg" alt="Logo IEL" />
+    <header class="grid-container">
+      <nav class="nav">
+        <div>
+          <div class="logos-container">
+            <img
+              class="image-logo"
+              src="logos/logo_sistema_fiep.svg"
+              alt="Logo do Sistema FIEP"
+            />
+            <img class="image-logo" src="logos/logo_fiep.svg" alt="Logo FIEP" />
+            <img
+              class="image-logo"
+              src="logos/logo_senai.svg"
+              alt="Logo SENAI"
+            />
+            <img class="image-logo" src="logos/logo_sesi.svg" alt="Logo SESI" />
+            <img class="image-logo" src="logos/logo_iel.svg" alt="Logo IEL" />
+          </div>
         </div>
-        <div class="header-text-container">
-          <span class="header-text">Carreira</span>
-          <span class="header-text">Licitações</span>
-          <span class="header-text">Imprensa</span>
-          <span class="header-text">Ouvidoria</span>
-          <span class="header-text">SAC</span>
+        <div>
+          <div class="header-text-container">
+            <a href="#" class="header-text">Carreira</a>
+            <a href="#" class="header-text">Licitações</a>
+            <a href="#" class="header-text">Imprensa</a>
+            <a href="#" class="header-text">Ouvidoria</a>
+            <a href="#" class="header-text">SAC</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="grid-container" name="section-1">
+      <div class="empty-div"></div>
+      <div
+        class="span-4"
+        style="
+          width: 100%;
+          height: fit-content;
+          padding-top: 56px;
+          object-fit: contain;
+        "
+      >
+        <img class="selo_principal span-4" src="selo_principal.svg" />
+        <h1>FORMANDO GERAÇÕES QUE FAZEM A DIFERENÇA</h1>
+      </div>
+      <div class="empty-div"></div>
+      <img src="Image_section.svg" class="span-6 image-girl" />
+
+      <div class="empty-div"></div>
+
+      <div class="video-container" id="videoThumbnail">
+        <img
+          src="framevideo_16_9.svg"
+          style="
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            position: relative;
+            z-index: 1;
+            border-radius: 16px;
+            cursor: pointer;
+          "
+        />
+      </div>
+
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <img src="Frame_6630.svg" alt="Video Content" class="modal-image" />
         </div>
       </div>
-    </header>
-    <main class="main-container">
-      <section class="section-1">
-        <img class="selo-principal" src="selo_principal.svg" />
-        <img class="image-girl" src="Image_section.svg" />
-        <h1>FORMANDO GERAÇÕES QUE FAZEM A DIFERENÇA</h1>
-        <img class="layer-1" src="Layer_1.svg" />
-        <img class="framevideo" src="framevideo_16_9.svg" />
-        <div class="logos-div-section-1">
-          <img class="sesi-industria" src="logos/sesi_da_industria.svg" />
-          <img class="sesi-inter" src="logos/sesi_internacional.svg" />
-          <img class="sesi-ref" src="logos/sesi_referencia.svg" />
-          <img class="sesi-ref-inter" src="logos/sesi_referencia_inter.svg" />
-        </div>
-        <div class="description">
-          <span class="description-text-1">
-            A Educação Básica do Sesi Paraná há 20 anos revoluciona o ensino,
-            preparando estudantes para os desafios da indústria e do mundo
-            digital. Nossa metodologia inovadora, baseada no conceito maker,
-            estimula a criatividade, o pensamento crítico e o protagonismo dos
-            alunos.
-          </span>
-          <span class="description-highlight"
-            >AQUI, O APRENDIZADO VAI ALÉM DA TEORIA!</span
-          >
-          <span class="description-text-2">
-            Com um ambiente colaborativo e tecnologias de ponta, os estudantes
-            desenvolvem habilidades essenciais para o futuro, explorando na
-            prática soluções para desafios reais. 
-          </span>
-        </div>
-      </section>
-      <section class="section-2">
-        <img src="Image_Container.svg" />
+      <div class="empty-div"></div>
+
+      <img src="/logos/sesi_da_industria.svg" />
+      <img src="/logos/sesi_internacional.svg" />
+      <img src="/logos/sesi_referencia.svg" />
+      <img src="/logos/sesi_referencia_inter.svg" />
+
+      <div class="empty-div"></div>
+      <div class="description span-desc">
+        <span class="description-text-1">
+          A Educação Básica do Sesi Paraná há 20 anos revoluciona o ensino,
+          preparando estudantes para os desafios da indústria e do mundo
+          digital. Nossa metodologia inovadora, baseada no conceito maker,
+          estimula a criatividade, o pensamento crítico e o protagonismo dos
+          alunos.
+        </span>
+        <span class="description-highlight"
+          >AQUI, O APRENDIZADO VAI ALÉM DA TEORIA!</span
+        >
+        <span class="description-text-2">
+          Com um ambiente colaborativo e tecnologias de ponta, os estudantes
+          desenvolvem habilidades essenciais para o futuro, explorando na
+          prática soluções para desafios reais.
+        </span>
+      </div>
+      <div class="empty-div"></div>
+    </div>
+
+    <div class="grid-container" name="section-2">
+      <div class="empty-div"></div>
+      <div class="section-2">
+        <img class="section-2-img" src="Image_Container.svg" />
         <div class="section-2-text-button-container">
           <div class="section-2-text-container">
             <span class="section-2-highlight">
@@ -77,197 +124,251 @@
               Conheça mais sobre nosso modelo de ensino inovador.
             </span>
           </div>
-          <button class="section-2-button">Quero Conhecer</button>
+          <button class="section-2-button desktop-button">
+            <span>Quero Conhecer</span>
+          </button>
         </div>
-        <div>
+        <div style="width: 100%; height: 100%">
           <div class="section-2-icons">
-            <img src="/icons/campaign.svg" />
+            <picture>
+              <source
+                srcset="/icons/ic-generic-check-rounded.svg"
+                media="(max-width: 1079px)"
+              />
+              <img
+                class="section-2-icon"
+                src="/icons/campaign.svg"
+                alt="Responsive Icon"
+              />
+            </picture>
             <span>Protagonismo</span>
           </div>
           <div class="section-2-icons">
-            <img src="/icons/smart_toy.svg" />
+            <picture>
+              <source
+                srcset="/icons/ic-generic-check-rounded.svg"
+                media="(max-width: 1079px)"
+              />
+              <img
+                class="section-2-icon"
+                src="/icons/smart_toy.svg"
+                alt="Responsive Icon"
+              />
+            </picture>
             <span>Competições de Robótica</span>
           </div>
           <div class="section-2-icons">
-            <img src="/icons/groups.svg" />
+            <picture>
+              <source
+                srcset="/icons/ic-generic-check-rounded.svg"
+                media="(max-width: 1079px)"
+              />
+              <img
+                class="section-2-icon"
+                src="/icons/groups.svg"
+                alt="Responsive Icon"
+              />
+            </picture>
             <span>Trabalhos em equipe</span>
           </div>
           <div class="section-2-icons">
-            <img src="/icons/handshake.svg" />
-            <span>Parcerias com a indústria </span>
+            <picture>
+              <source
+                srcset="/icons/ic-generic-check-rounded.svg"
+                media="(max-width: 1079px)"
+              />
+              <img
+                class="section-2-icon"
+                src="/icons/handshake.svg"
+                alt="Responsive Icon"
+              />
+            </picture>
+            <span>Parcerias com a indústria</span>
           </div>
           <div class="section-2-icons">
-            <img src="/icons/lightbulb.svg" />
+            <picture>
+              <source
+                srcset="/icons/ic-generic-check-rounded.svg"
+                media="(max-width: 1079px)"
+              />
+              <img
+                class="section-2-icon"
+                src="/icons/lightbulb.svg"
+                alt="Responsive Icon"
+              />
+            </picture>
             <span>Inovação e tecnologia</span>
           </div>
         </div>
-      </section>
-      <section class="section-3">
-        <div class="section-3-text-box">
-          <span class="section-3-highlight">Metodologia STEAM:</span>
-          <span class="section-3-highlight-normal"
-            >aprendizado para o futuro</span
-          >
-          <span class="section-3-text"
-            >Na Educação Básica do Sesi, a metodologia STEAM integra as
-            disciplinas de Ciências, Tecnologia, Engenharia, Artes e Matemática,
-            promovendo um aprendizado dinâmico, unindo criatividade, inovação e
-            resolução de problemas reais.
-          </span>
-        </div>
-        <div>
-          <div class="section-3-cards">
-            <div
-              style="
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-              "
-            >
-              <img src="cards/ciencia.svg" />
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 12px;
-              "
-            >
-              <span class="section-3-card-title" style="color: #8749a7"
-                >Ciências</span
-              >
-              <span
-                >Estimula a investigação e o pensamento crítico para compreender
-                fenômenos e desenvolver soluções.</span
-              >
-            </div>
-          </div>
-          <div class="section-3-cards">
-            <div
-              style="
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-              "
-            >
-              <img src="cards/engenharia.svg" />
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 12px;
-              "
-            >
-              <span class="section-3-card-title" style="color: #4888a5"
-                >Engenharia</span
-              >
-              <span
-                >Foca na aplicação prática do conhecimento para criar, testar e
-                aprimorar projetos e protótipos.</span
-              >
-            </div>
-          </div>
-          <div class="section-3-cards">
-            <div
-              style="
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-              "
-            >
-              <img src="cards/tecnologia.svg" />
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 12px;
-              "
-            >
-              <span class="section-3-card-title" style="color: #49a7a4"
-                >Tecnologia
-              </span>
-              <span
-                >Prepara os alunos para o mundo digital, incentivando o uso de
-                ferramentas e inovações tecnológicas.</span
-              >
-            </div>
-          </div>
-          <div class="section-3-cards">
-            <div
-              style="
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-              "
-            >
-              <img src="cards/artes.svg" />
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 12px;
-              "
-            >
-              <span class="section-3-card-title" style="color: #82a235"
-                >Artes</span
-              >
-              <span
-                >Desenvolve a expressão criativa e o pensamento inovador,
-                essenciais para a solução de desafios complexos.</span
-              >
-            </div>
-          </div>
-          <div class="section-3-cards">
-            <div
-              style="
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-              "
-            >
-              <img
-                style="display: flex; justify-content: start"
-                src="cards/matematica.svg"
-              />
-            </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 12px;
-              "
-            >
-              <span class="section-3-card-title" style="color: #e77222"
-                >Matemática</span
-              >
-              <span
-                >Aprimora o raciocínio lógico e a capacidade analítica,
-                fundamentais para a resolução de problemas.</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-4">
-        <div
-          style="display: flex; flex-direction: column; gap: 8px; width: 380px"
+      </div>
+      <button class="section-2-button mobile-button">
+        <span>Vou Conhecer</span>
+      </button>
+      <div class="empty-div"></div>
+    </div>
+
+    <div class="grid-container" name="section-3">
+      <div class="empty-div"></div>
+      <div class="section-3-text-box">
+        <span class="section-3-highlight">Metodologia STEAM:</span>
+        <span class="section-3-highlight-normal"
+          >aprendizado para o futuro</span
         >
-          <span class="section-4-text-highlight"
-            >Acesse o material completo sobre a nossa metodologia</span
+        <span class="section-3-text">
+          Na Educação Básica do Sesi, a metodologia STEAM integra as disciplinas
+          de Ciências, Tecnologia, Engenharia, Artes e Matemática, promovendo
+          &nbsp; &nbsp; um aprendizado dinâmico, unindo criatividade, inovação e
+          resolução de problemas reais.
+        </span>
+      </div>
+      <div class="section-3-cards-container">
+        <div class="section-3-cards">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
           >
-          <span class="section-4-text-normal"
-            >Saiba todos os detalhes sobre a metodologia e diferenciais da
-            Educação Básica do Sesi.
-          </span>
+            <img src="cards/ciencia.svg" />
+          </div>
+          <div class="section-3-card-content">
+            <span class="section-3-card-title" style="color: #8749a7"
+              >Ciências</span
+            >
+            <span
+              >Estimula a investigação e o pensamento crítico para compreender
+              fenômenos e desenvolver soluções.</span
+            >
+          </div>
         </div>
+        <div class="section-3-cards">
+          <div
+            style="
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+            "
+          >
+            <img src="cards/engenharia.svg" />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              gap: 12px;
+            "
+          >
+            <span class="section-3-card-title" style="color: #4888a5"
+              >Engenharia</span
+            >
+            <span
+              >Foca na aplicação prática do conhecimento para criar, testar e
+              aprimorar projetos e protótipos.</span
+            >
+          </div>
+        </div>
+        <div class="section-3-cards">
+          <div
+            style="
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+            "
+          >
+            <img src="cards/tecnologia.svg" />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              gap: 12px;
+            "
+          >
+            <span class="section-3-card-title" style="color: #49a7a4"
+              >Tecnologia
+            </span>
+            <span
+              >Prepara os alunos para o mundo digital, incentivando o uso de
+              ferramentas e inovações tecnológicas.</span
+            >
+          </div>
+        </div>
+        <div class="section-3-cards">
+          <div
+            style="
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+            "
+          >
+            <img src="cards/artes.svg" />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              gap: 12px;
+            "
+          >
+            <span class="section-3-card-title" style="color: #82a235"
+              >Artes</span
+            >
+            <span
+              >Desenvolve a expressão criativa e o pensamento inovador,
+              essenciais para a solução de desafios complexos.</span
+            >
+          </div>
+        </div>
+        <div class="section-3-cards">
+          <div
+            style="
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+            "
+          >
+            <img
+              style="display: flex; justify-content: start"
+              src="cards/matematica.svg"
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              gap: 12px;
+            "
+          >
+            <span class="section-3-card-title" style="color: #e77222"
+              >Matemática</span
+            >
+            <span
+              >Aprimora o raciocínio lógico e a capacidade analítica,
+              fundamentais para a resolução de problemas.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="empty-div"></div>
+    </div>
+
+    <div class="grid-container" name="section-4">
+      <div class="empty-div" style="margin-top: 64px"></div>
+      <div class="section-4-text-box">
+        <span class="section-4-text-highlight"
+          >Acesse o material completo sobre a nossa metodologia</span
+        >
+        <span class="section-4-text-normal"
+          >Saiba todos os detalhes sobre a metodologia e diferenciais da
+          Educação Básica do Sesi.
+        </span>
+      </div>
+      <div class="section-4-form-container">
         <div class="section-4-form-box">
           <span>Baixe nosso material exclusivo.</span>
           <form style="display: flex; flex-direction: column; gap: 16px">
@@ -316,8 +417,11 @@
             </div>
           </form>
         </div>
-      </section>
-      <section class="section-5">
+      </div>
+      <div class="empty-div" style="margin-top: 64px"></div>
+    </div>
+    <div class="grid-container" name="section-5">
+      <div class="span-12">
         <div style="width: 100%">
           <div class="section-5-highlight">
             <span
@@ -327,169 +431,298 @@
           </div>
           <div style="flex-direction: row; display: flex; gap: 32px">
             <div class="sesi-card-container">
-              <div class="sesi-card">
-                <div class="sesi-card-header">
-                  <img
-                    src="sesi_industria_white.svg"
-                    alt="Colégio Sesi da Indústria"
-                  />
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-slide">
+                    <div class="sesi-card">
+                      <div class="sesi-card-header">
+                        <img
+                          src="sesi_industria_white.svg"
+                          alt="Colégio Sesi da Indústria"
+                        />
+                      </div>
+                      <div class="sesi-card-body">
+                        <p>
+                          Metodologia de ensino inovadora,<br />
+                          que ajuda a desenvolver o conhecimento e competências
+                          importantes para todos os desafios da vida.
+                        </p>
+                      </div>
+                      <div class="sesi-card-footer">
+                        <a href="#" target="_blank">
+                          Conheça
+                          <img
+                            src="external-link.svg"
+                            alt="Seta para a direita"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-slide">
+                    <div class="sesi-card">
+                      <div
+                        class="sesi-card-header"
+                        style="background-color: #2c7bd8"
+                      >
+                        <img
+                          src="sesi_inter_white.svg"
+                          alt="Colégio Sesi Internacional"
+                        />
+                      </div>
+                      <div class="sesi-card-body">
+                        <p>
+                          Educação que trabalha o desenvolvimento do
+                          conhecimento e de competências com imersão Bilíngue,
+                          Trilíngue e cultura estrangeiras.
+                        </p>
+                      </div>
+                      <div class="sesi-card-footer">
+                        <a href="#" target="_blank">
+                          Conheça
+                          <img
+                            src="external-link.svg"
+                            alt="Seta para a direita"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-slide">
+                    <div class="sesi-card">
+                      <div
+                        class="sesi-card-header"
+                        style="background-color: #2fafa6"
+                      >
+                        <img
+                          src="sesi_referencia_white.svg"
+                          alt="Colégio Sesi Referência"
+                        />
+                      </div>
+                      <div class="sesi-card-body">
+                        <p>
+                          A Unidade em São José dos Pinhais foi selecionada para
+                          ser a primeira escola a oferecer as novidades
+                          tecnológicas e pedagógicas da rede Sesi no Brasil.
+                        </p>
+                      </div>
+                      <div class="sesi-card-footer">
+                        <a href="#" target="_blank">
+                          Conheça
+                          <img
+                            src="external-link.svg"
+                            alt="Seta para a direita"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-slide">
+                    <div class="sesi-card">
+                      <div
+                        class="sesi-card-header"
+                        style="background-color: #003a59"
+                      >
+                        <img
+                          src="sesi_referencia_internacional_white.svg"
+                          alt="Colégio Sesi Referência Internacional"
+                        />
+                      </div>
+                      <div class="sesi-card-body">
+                        <p>
+                          Com uma proposta pedagógica inovadora, unimos a
+                          tecnológica da Escola Sesi de Referência da Indústria
+                          com o ensino bilíngue do Colégio Sesi Internacional.
+                        </p>
+                      </div>
+                      <div class="sesi-card-footer">
+                        <a href="#" target="_blank">
+                          Conheça
+                          <img
+                            src="external-link.svg"
+                            alt="Seta para a direita"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="sesi-card-body">
-                  <p>
-                    Metodologia de ensino inovadora,<br />
-                    que ajuda a desenvolver o conhecimento e competências
-                    importantes para todos os desafios da vida.
-                  </p>
-                </div>
-                <div class="sesi-card-footer">
-                  <a href="#" target="_blank">
-                    Conheça
-                    <img src="external-link.svg" alt="Seta para a direita" />
-                  </a>
-                </div>
-              </div>
-              <div class="sesi-card">
-                <div class="sesi-card-header" style="background-color: #2c7bd8">
-                  <img
-                    src="sesi_inter_white.svg"
-                    alt="Colégio Sesi da Indústria"
-                  />
-                </div>
-                <div class="sesi-card-body">
-                  <p>
-                    Educação que trabalha o desenvolvimento do conhecimento e de
-                    competências com imersão Bilíngue, Trilíngue e cultura
-                    estrangeiras.
-                  </p>
-                </div>
-                <div class="sesi-card-footer">
-                  <a href="#" target="_blank">
-                    Conheça
-                    <img src="external-link.svg" alt="Seta para a direita" />
-                  </a>
-                </div>
-              </div>
-              <div class="sesi-card">
-                <div class="sesi-card-header" style="background-color: #2fafa6">
-                  <img
-                    src="sesi_referencia_white.svg"
-                    alt="Colégio Sesi da Indústria"
-                  />
-                </div>
-                <div class="sesi-card-body">
-                  <p>
-                    A Unidade em São José dos Pinhais foi selecionada para ser a
-                    primeira escola a oferecer as novidades tecnológicas e
-                    pedagógicas da rede Sesi no Brasil.
-                  </p>
-                </div>
-                <div class="sesi-card-footer">
-                  <a href="#" target="_blank">
-                    Conheça
-                    <img src="external-link.svg" alt="Seta para a direita" />
-                  </a>
-                </div>
-              </div>
-              <div class="sesi-card">
-                <div class="sesi-card-header" style="background-color: #003a59">
-                  <img
-                    src="sesi_referencia_internacional_white.svg"
-                    alt="Colégio Sesi da Indústria"
-                  />
-                </div>
-                <div class="sesi-card-body">
-                  <p>
-                    Com uma proposta pedagógica inovadora, unimos a tecnológica
-                    da Escola Sesi de Referência da Indústria com o ensino
-                    bilíngue do Colégio Sesi Internacional.
-                  </p>
-                </div>
-                <div class="sesi-card-footer">
-                  <a href="#" target="_blank">
-                    Conheça
-                    <img src="external-link.svg" alt="Seta para a direita" />
-                  </a>
+                <div class="carousel-controls">
+                  <button class="carousel-button prev">❮</button>
+                  <div class="carousel-dots"></div>
+                  <button class="carousel-button next">❯</button>
                 </div>
               </div>
             </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                const carouselInner = document.querySelector('.carousel-inner');
+                const slides = document.querySelectorAll('.carousel-slide');
+                const dotsContainer = document.querySelector('.carousel-dots');
+                let currentSlide = 0;
+                const totalSlides = slides.length;
+
+                // Create dots
+                slides.forEach((_, index) => {
+                  const dot = document.createElement('button');
+                  dot.classList.add('carousel-dot');
+                  if (index === 0) dot.classList.add('active');
+                  dot.addEventListener('click', () => goToSlide(index));
+                  dotsContainer.appendChild(dot);
+                });
+
+                const dots = document.querySelectorAll('.carousel-dot');
+
+                // Navigation functions
+                function goToSlide(index) {
+                  currentSlide = (index + totalSlides) % totalSlides;
+                  updateCarousel();
+                }
+
+                function nextSlide() {
+                  currentSlide = (currentSlide + 1) % totalSlides;
+                  updateCarousel();
+                }
+
+                function prevSlide() {
+                  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                  updateCarousel();
+                }
+
+                function updateCarousel() {
+                  const offset = -currentSlide * 100;
+                  carouselInner.style.transform = `translateX(${offset}%)`;
+
+                  // Update dots
+                  dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                  });
+                }
+
+                // Event listeners
+                document
+                  .querySelector('.carousel-button.next')
+                  .addEventListener('click', nextSlide);
+                document
+                  .querySelector('.carousel-button.prev')
+                  .addEventListener('click', prevSlide);
+
+                // Auto-advance (optional)
+                let slideInterval = setInterval(nextSlide, 5000);
+
+                // Pause on hover
+                const carousel = document.querySelector('.carousel');
+                carousel.addEventListener('mouseenter', () =>
+                  clearInterval(slideInterval)
+                );
+                carousel.addEventListener('mouseleave', () => {
+                  clearInterval(slideInterval);
+                  slideInterval = setInterval(nextSlide, 5000);
+                });
+
+                // Touch support
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                carousel.addEventListener(
+                  'touchstart',
+                  (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    clearInterval(slideInterval);
+                  },
+                  { passive: true }
+                );
+
+                carousel.addEventListener(
+                  'touchend',
+                  (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                    slideInterval = setInterval(nextSlide, 5000);
+                  },
+                  { passive: true }
+                );
+
+                function handleSwipe() {
+                  const swipeThreshold = 50;
+                  if (touchStartX - touchEndX > swipeThreshold) {
+                    nextSlide();
+                  } else if (touchEndX - touchStartX > swipeThreshold) {
+                    prevSlide();
+                  }
+                }
+              });
+            </script>
           </div>
         </div>
-      </section>
-      <section class="section-6">
-        <img src="logo_20_anos_small.svg" />
-        <div style="width: 100%">
-          <div class="section-6-text-container" style="width: 100%">
-            <span class="section-6-text-highlight"
-              >Acompanhe a nossa história.</span
-            >
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-              "
-            >
-              <span class="section-6-text-normal"
-                >Siga a gente nas redes sociais e veja o dia a dia dos nossos
-                alunos.</span
+      </div>
+    </div>
+    <div class="grid-container" name="section-6">
+      <div class="section-6-container">
+        <div class="section-6">
+          <img src="logo_20_anos_small.svg" />
+          <div style="width: 100%">
+            <div class="section-6-text-container" style="width: 100%">
+              <span class="section-6-text-highlight"
+                >Acompanhe a nossa história.</span
               >
-              <div style="display: flex; flex-direction: row; gap: 15px">
-                <img src="instagram.svg" />
-                <img src="facebook.svg" />
-                <img src="youtube.svg" />
+              <div class="section-6-socials-container">
+                <span class="section-6-text-normal"
+                  >Siga a gente nas redes sociais e veja o dia a dia dos nossos
+                  alunos.</span
+                >
+                <div style="display: flex; flex-direction: row; gap: 15px">
+                  <img src="instagram.svg" />
+                  <img src="facebook.svg" />
+                  <img src="youtube.svg" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="section-6-links-container">
-            <span>Proteção e Privacidade de Dados</span>
-            <span>Política de privacidade</span>
-            <span>Programa de Integridade</span>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="logos-container">
-            <img
-              class="image-logo"
-              src="logos/logo_sistema_fiep.svg"
-              alt="Logo do Sistema FIEP"
-            />
-            <img class="image-logo" src="logos/logo_fiep.svg" alt="Logo FIEP" />
-            <img
-              class="image-logo"
-              src="logos/logo_senai.svg"
-              alt="Logo SENAI"
-            />
-            <img class="image-logo" src="logos/logo_sesi.svg" alt="Logo SESI" />
-            <img class="image-logo" src="logos/logo_iel.svg" alt="Logo IEL" />
-          </div>
-
-          <!-- Separador vertical -->
-          <div class="footer-separator"></div>
-
-          <div class="footer-text-container">
-            <span class="footer-text">SAC</span>
-            <span class="footer-text">Carreira</span>
-            <span class="footer-text">Licitações</span>
-            <span class="footer-text">Imprensa</span>
-            <span class="footer-text">Ouvidoria</span>
+            <div class="section-6-links-container">
+              <a href="#">Proteção e Privacidade de Dados</a>
+              <a href="#">Política de privacidade</a>
+              <a href="#">Programa de Integridade</a>
+            </div>
           </div>
         </div>
-
-        <div class="footer-divider"></div>
-
-        <div class="footer-bottom-text">
-          <p>
-            Sistema Fiep - Sistema Federação das Indústrias do Estado do
-            Paraná<br />
-            Av. Cândido de Abreu, 200 - Centro Cívico. CEP: 80530-000 -
-            Curitiba/PR
-          </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logos-container">
+          <img
+            class="image-logo"
+            src="logos/logo_sistema_fiep.svg"
+            alt="Logo do Sistema FIEP"
+          />
+          <img class="image-logo" src="logos/logo_fiep.svg" alt="Logo FIEP" />
+          <img class="image-logo" src="logos/logo_senai.svg" alt="Logo SENAI" />
+          <img class="image-logo" src="logos/logo_sesi.svg" alt="Logo SESI" />
+          <img class="image-logo" src="logos/logo_iel.svg" alt="Logo IEL" />
         </div>
-      </footer>
-    </main>
+
+        <div class="footer-separator"></div>
+
+        <div class="footer-text-container">
+          <a href="#" class="footer-text">SAC</a>
+          <a href="#" class="footer-text">Carreira</a>
+          <a href="#" class="footer-text">Licitações</a>
+          <a href="#" class="footer-text">Imprensa</a>
+          <a href="#" class="footer-text">Ouvidoria</a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-text">
+        <p>
+          Sistema Fiep - Sistema Federação das Indústrias do Estado do Paraná<br />
+          Av. Cândido de Abreu, 200 - Centro Cívico. CEP: 80530-000 -
+          Curitiba/PR
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/src/form-validation.js"></script>
+    <script type="module" src="/js/modal.js"></script>
   </body>
 </html>
